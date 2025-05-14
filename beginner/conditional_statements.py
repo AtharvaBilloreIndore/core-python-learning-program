@@ -16,7 +16,7 @@ The examples in this file will demonstrate how to use conditional statements eff
 
 # TODO: Add conditional statements examples and implementations
 
-def Grades(marks=[]):
+def grading(marks=[]):
     grades = []
     for el in marks :
         if (el >= 90) :
@@ -36,7 +36,7 @@ def Grades(marks=[]):
     
 Grades(marks=[65,45,34,89,75,85,83,91])
 
-def Decision_Maker():
+def decision_maker():
     try: 
         age = int(input("Enter age: "))
         match age:
