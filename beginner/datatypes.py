@@ -40,8 +40,8 @@ def calculator():
     def division():
         n1 = float(input("Enter 1st number: "))
         n2  = float(input("Enter 2nd number: "))
-        if n2 == 0:
-            return "Cannot divide by zero"
+        if n2 == 0: 
+            raise ZeroDivisionError("Cannot divide by zero")
         quo = n1 / n2
         return quo
 
@@ -54,8 +54,11 @@ def calculator():
     op = input("Operation you want to perform (add,subtract,multiply divide): ").lower()
 
     if op in operations:
-        result = operations[op]()  
-        print("Result:", result)
+        try:
+            result = operations[op]()
+            print("Result:", result)
+        except ArithmeticError as e:
+            print("Arithmetic Error:", e)
     else:
         print("Invalid operation.")
 
