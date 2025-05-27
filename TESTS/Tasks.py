@@ -1,49 +1,36 @@
+def add(n1,n2):
+    return n1 + n2
+    
+def difference(n1,n2):
+    return n1 - n2
+
+def product(n1,n2):
+    return n1 * n2
+
+def division(n1,n2):
+    if n2 == 0: 
+        raise ZeroDivisionError("Cannot divide by zero")
+    return n1 / n2
 def calculator():
-        
-    def sum():
-        n1 = float(input("Enter 1st number: "))
-        n2  = float(input("Enter 2nd number: "))
-        sum1 = n1 + n2
-        return sum1
-    
-    def difference():
-        n1 = float(input("Enter 1st number: "))
-        n2  = float(input("Enter 2nd number: "))
-        dif = n1 - n2
-        return dif
+        operations = {
+            'add': add,
+            'subtract': difference,
+            'multiply': product,
+            'divide': division
+        }
+        op = input("Operation you want to perform (add,subtract,multiply divide): ").lower()
 
-    def product():
-        n1 = float(input("Enter 1st number: "))
-        n2  = float(input("Enter 2nd number: "))
-        pro = n1 * n2
-        return pro
-    
-    def division():
-        n1 = float(input("Enter 1st number: "))
-        n2  = float(input("Enter 2nd number: "))
-        if n2 == 0: 
-            raise ZeroDivisionError("Cannot divide by zero")
-        quo = n1 / n2
-        return quo
-
-    operations = {
-        'add': sum,
-        'subtract': difference,
-        'multiply': product,
-        'divide': division
-    }
-    op = input("Operation you want to perform (add,subtract,multiply divide): ").lower()
-
-    if op in operations:
-        try:
-            result = operations[op]()
-            print("Result:", result)
-        except ArithmeticError as e:
-            print("Arithmetic Error:", e)
-    else:
-        print("Invalid operation.")
-
-
+        if op in operations:
+            try:
+                n1 = float(input("Enter 1st number: "))
+                n2 = float(input("Enter 2nd number: "))
+                result = operations[op](n1,n2)
+                print("Result:", result)
+            except ValueError as e:
+                print("ValueError:", e)
+        else:
+            print("Invalid operation.")
+            
 def text_analyzer():
     text = input("Enter a paragraph: ")
 
@@ -60,9 +47,12 @@ def text_analyzer():
     print(f"Uppercase Text: {uppercase_text}")
     print(f"Lowercase Text: {lowercase_text}")
 
-def Grades():
-    marks = int(input("Enter marks from (0-100): ")) 
+def grades():
     try:
+        marks = int(input("Enter marks from (0-100): ")) 
+        if not (0<=marks<=100):
+            print("\nMarks should be between 0 and 100")
+            return
         match marks:
             case marks if marks >= 90:
                 print("Grade: A")
@@ -76,6 +66,8 @@ def Grades():
                 print("Grade: E")
             case marks if marks<33:
                 print("Grade: F")
+            case _:
+                print("Unexpected input. Please try again.")
     except ValueError as e:
         print("\nInvalid input.")
 
@@ -101,10 +93,9 @@ def check_answer(guess, answer, turns):
 def game():
     print("Welcome to the Number Guessing Game!")
     answer = int(input("Player 1, enter the number for Player 2 to guess (1-100): "))
-
+    turns = int(input("Player 1, how many attempts should Player 2 get?"))
+    
     clear_screen()  
-
-    turns = 7
     guess = 0
 
     while guess != answer:

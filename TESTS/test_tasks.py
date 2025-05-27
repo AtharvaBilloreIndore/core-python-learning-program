@@ -3,16 +3,28 @@ import pytest
 
 def test_add():
     assert add(3, 4) == 7
-    assert add(v, 5) == ValueError
-
+    
+def test_add_string_input():
+    with pytest.raises(TypeError):
+        add("a",96)
+        
 def test_difference():
     assert difference(10, 5) == 5
-    assert difference(g, 5) == ValueErrorpytest
-
+    
+def test_difference_string_input():
+    with pytest.raises(TypeError):
+        difference("d",35)
+    
 def test_product():
     assert product(4, 5) == 20
-    assert product(k, 5) == ValueError
+
+def test_profuct_string_input():
+    with pytest.raises(TypeError):
+        add("l",57)
 
 def test_division():
     assert division(10, 2) == 5
-    assert division(a,5) == ValueError
+
+def test_division_string_input():
+    with pytest.raises(TypeError):
+        add("x",78)
