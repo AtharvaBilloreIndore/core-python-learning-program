@@ -123,3 +123,33 @@ def main():
     except ValueError:
         print("Invalid input. Please enter correct values.")
 main()
+
+#FREQUENCY COUNTER
+import re
+from collections import Counter
+
+def word_frequency(text):
+    text = text.lower()
+    words = re.findall(r"\b[a-z]+(?:['-][a-z]+)*\b", text)
+    word_count = Counter(words)
+    return word_count
+
+def main():
+    print("Welcome to the word frequency counter")
+    try: 
+        text = input("Enter your text here: ")
+    
+        if not text.strip():
+            print("No text found.")
+            return
+        freq = word_frequency(text)
+        if not freq:
+            print("No valid words found in the input.")
+            return
+        print("\nWord Frequencies:")
+        for word, count in freq.items():
+            print(f"{word} : {count}")
+    
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+main()
