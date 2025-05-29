@@ -16,7 +16,7 @@ The examples in this file will demonstrate how to use conditional statements eff
 
 # TODO: Add conditional statements examples and implementations
 
-def grading(marks=[]):
+def grade(marks=[]):
     grades = []
     for el in marks :
         if (el >= 90) :
@@ -34,7 +34,7 @@ def grading(marks=[]):
     print(("Grades: ", grades))
     return (grades)
     
-Grades(marks=[65,45,34,89,75,85,83,91])
+grade(marks=[65,45,34,89,75,85,83,91])
 
 def decision_maker():
     try: 
@@ -59,10 +59,10 @@ def decision_maker():
         choice = input("Do you want to restart the program? (yes/no): ").strip().lower()
         
         if choice == "yes":
-            Decision_Maker() 
+            decision_maker() 
         else:
             print("Program terminated")    
-value = Decision_Maker()
+value = decision_maker()
 print (value)
 
         
