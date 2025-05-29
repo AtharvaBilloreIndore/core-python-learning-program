@@ -61,5 +61,3 @@ def calculator():
             print("Arithmetic Error:", e)
     else:
         print("Invalid operation.")
-
-calculator()
