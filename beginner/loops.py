@@ -3,10 +3,10 @@ import os
 def clear_screen():
     os.system('cls')  
 
-def check_answer(guess, answer, turns):
+def check_answer(guess, answer):
     if guess == answer:
         print(f"You got it! The answer was {answer}.")
-        return turns  
+        return True 
     elif guess - 1 == answer or guess - 2 == answer:
         print("Very close! Reduce a little.")
     elif guess + 1 == answer or guess + 2 == answer:
@@ -15,7 +15,7 @@ def check_answer(guess, answer, turns):
         print("Too high.")
     elif guess < answer:
         print("Too low.")
-    return turns - 1
+    return False
 
 def game():
     print("Welcome to the Number Guessing Game!")
@@ -24,16 +24,17 @@ def game():
     clear_screen()  
 
     turns = 7
-    guess = 0
+    guess = None
 
-    while guess != answer:
+    while turns > 0:
         print(f"You have {turns} attempts remaining to guess the number.")
         guess = int(input("Make a guess: "))
-        turns = check_answer(guess, answer, turns)
 
+        if check_answer(guess,answer):
+            return
+        turns -= 1
         if turns == 0:
             print("You've run out of guesses, you lose.")
-            return
         else:
             print("Guess again.")
 
