@@ -28,7 +28,8 @@ def to_do_list():
     print("Delete Task")
     print("Exit")
     
-while True:
+choice = "" 
+while choice != "exit":
     to_do_list()
     choice = input("Enter your choice (add,view,delete,exit): ").lower()
     
@@ -54,7 +55,6 @@ while True:
     
     elif choice == "exit":
         print("Exiting to-do list.")
-        break
 
     else:
         print("Invalid choice. Please enter correct choice.")
@@ -72,7 +72,8 @@ def plmanager():
     print("search song")
     print("exit")
     
-while True:
+choice = ""
+while choice!="exit":
     plmanager()
     choice = input("Enter your choice (add,view,delete,search,exit): ").lower()
     
