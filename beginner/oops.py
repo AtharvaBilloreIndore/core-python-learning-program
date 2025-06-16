@@ -436,3 +436,257 @@ def main():
 
 if __name__ == "__main__":
   main()
+  
+#Banking System
+from abc import ABC, abstractmethod
+from datetime import datetime, timedelta
+from typing import List
+
+class Account(ABC):
+  """
+    Abstract base class representing a bank account.
+    Attributes:
+        account_number (str): Unique ID of the account.
+        holder_name (str): Name of the account holder.
+        balance (float): Current balance in the account.
+  """
+  counter = 1
+  def __init__(self, account_number, holder_name, balance = 0.0):
+    """
+        Initialize a new account with a unique account number, holder name, and balance.
+        Args:
+            account_number (str): Not used (auto-generated internally).
+            holder_name (str): Name of the account holder.
+            balance (float, optional): Initial balance. Defaults to 0.0.
+    """
+    self.account_number = f"AT{Account.counter:03d}"
+    Account.counter += 1
+    self.holder_name = holder_name
+    self.balance = balance
+  @abstractmethod
+  def deposit(self,amount):
+    """Deposit a certain amount into the account."""
+    pass
+  @abstractmethod
+  def withdraw(self,amount):
+    """Withdraw a certain amount from the account."""
+    pass
+  def get_balance(self):
+    """Returns:float: The current balance of the account."""
+    return self.balance
+  
+class SavingsAccount(Account):
+  """
+    Savings account with a fixed interest rate.
+    Attributes:
+        interest_rate (float): Interest rate for the savings account (default is 4%).
+  """
+  def __init__(self, account_number, holder_name, balance=0.0):
+    """
+    Initialize a SavingsAccount instance.
+    Args: account_number (str): The account number for the savings account.
+          holder_name (str): The name of the account holder.
+          balance (float, optional): The initial balance of the account. Defaults to 0.0.
+    Attributes: interest_rate (float): The interest rate for the savings account, set to 4%.
+    """
+    super().__init__(account_number, holder_name, balance)
+    self.interest_rate = 4  
+  def deposit(self, amount):
+    """Add the deposit amount to the balance."""
+    self.balance += amount
+  def withdraw(self,amount):
+    """Withdraw amount if sufficient balance is available."""
+    if amount <= self.balance:
+      self.balance -= amount
+    else:
+      raise ValueError("Insufficient balance")
+  def calculate_interest(self):
+    """
+        Calculate interest on current balance.
+        Returns: float: Interest earned.
+    """
+    return self.balance * self.interest_rate/ 100
+
+class CurrentAccount(Account):
+  """
+    Current account with an overdraft limit of 3% of balance.
+    Attributes: overdraft_limit (float): Maximum allowable overdraft.
+  """
+  def __init__(self,account_number, holder_name, balance=0.0):
+    """
+        Initialize a current account with an overdraft limit.
+        Args: account_number (str): Not used directly.
+              holder_name (str): Name of the account holder.
+              balance (float, optional): Initial balance. Defaults to 0.0.
+        Attributes: overdraft_limit (float): Maximum amount that can be withdrawn beyond the current balance.
+    """
+    super().__init__(account_number, holder_name, balance)
+    self.overdraft_limit = balance * 0.03 
+  def deposit(self, amount):
+    """Add deposit amount to the account balance."""
+    self.balance += amount
+  def withdraw(self, amount):
+    """
+        Withdraw amount if within balance and overdraft limit.
+        Raises: ValueError: If withdrawal exceeds overdraft limit.
+    """
+    if amount <= self.balance + self.overdraft_limit:
+      self.balance -= amount
+    else:
+      raise ValueError("Exceeds overdraft limit")
+
+class FixedDepositAccount(Account):
+  """
+    Fixed deposit account with fixed interest and maturity date.
+    Attributes: interest_rate (float): Interest rate for FD.
+                maturity_date (date): Date when funds can be withdrawn.
+    """
+  def __init__(self, account_number, holder_name, deposit_amount):
+    """
+        Initializes FD with a deposit amount and sets maturity date.
+        Args: deposit_amount (float): Amount to be deposited.
+    """
+    super().__init__(account_number, holder_name, balance=deposit_amount)
+    self.interest_rate = 7
+    self.maturity_date =  datetime.now().date() + timedelta(days = 365)
+  def deposit(self, amount):
+    """
+        Disallowed operation for FD accounts.
+        Raises: NotImplementedError: Always, since FD can't accept further deposits.
+    """
+    raise NotImplementedError("Cannot deposit to a fixed deposit account")
+  def withdraw(self, amount):
+    """
+        Withdraw amount if on or after maturity date.
+        Raises: ValueError: If trying to withdraw before maturity or insufficient balance.
+    """
+    today = datetime.now().date()
+    if today >= self.maturity_date:
+      if amount <= self.balance:
+        self.balance -= amount
+      else:
+        raise ValueError("Insufficient balance")
+    else:
+      raise ValueError("Cannot withdraw before Maturity")
+  def calculate_interest(self):
+    """
+        Calculates interest earned.
+        Returns: float: Interest on deposit amount.
+    """
+    return self.balance * self.interest_rate / 100
+  
+class Transaction:
+  def __init__(self, from_account: Account, to_account: Account, amount: float, txn_type: str):
+    """
+    Represents a transaction between accounts.
+    Attributes:
+        from_account (Account): Sender account.
+        to_account (Account): Receiver account.
+        amount (float): Amount to be transferred.
+        timestamp (datetime): Time of transaction.
+        type (str): Type of transaction ('deposit', 'withdraw', 'transfer').
+    """
+    self.from_account = from_account
+    self.to_account = to_account
+    self.amount = amount
+    self.timestamp = datetime.now()
+    self.type = txn_type
+  def execute(self):
+    """
+        Execute the transaction based on type.
+        Raises: ValueError: If transaction type is invalid.
+    """
+    if self.type == "transfer":
+      self.from_account.withdraw(self.amount)
+      self.to_account.deposit(self.amount)
+    elif self.type == "deposit":
+      self.to_account.deposit(self.amount)
+    elif self.type == "withdraw":
+      self.from_account.withdraw(self.amount)
+    else:
+      raise ValueError("Invalid transaction type")
+       
+class Bank:
+  """
+    Represents a bank that holds multiple accounts.
+    Attributes: accounts (List[Account]): List of all accounts in the bank.
+  """
+  def __init__(self):
+    """
+    Initialize a Bank instance.
+    Attributes: accounts (List[Account]): A list to store all accounts associated with the bank.
+    """
+    self.accounts: List[Account] = []
+
+  def add_account(self, account: Account):
+      """
+        Add a new account to the bank.
+        Args: account (Account): The account to add.
+      """
+      self.accounts.append(account)
+
+  def find_account(self, account_number):
+      """
+        Find an account by account number.
+        Args: account_number (str): The account number to search.
+        Returns: Account: The matching account.
+        Raises: ValueError: If account is not found.
+      """
+      for acc in self.accounts:
+          if acc.account_number == account_number:
+              return acc
+      raise ValueError("Account not found")
+   
+def main():
+    """
+    The main function that demonstrates usage of the Bank system:
+    - Creates different types of accounts.
+    - Performs deposits, withdrawals, and transfers.
+    - Displays balances.
+    """
+    bank = Bank()
+    """Create and add accounts"""
+    acc1 = SavingsAccount(None, "Anil", balance=10000)
+    acc2 = CurrentAccount(None, "Namit", balance=5000)
+    acc3 = FixedDepositAccount(None, "Vaishali", deposit_amount=15000)
+
+    bank.add_account(acc1)
+    bank.add_account(acc2)
+    bank.add_account(acc3)
+
+    """Perform Transactions"""
+    try:
+        txn1 = Transaction(None, acc1, 2000, "deposit")
+        txn1.execute()
+    except Exception as e:
+        print("Transaction Error:", e)
+
+    try:
+        txn2 = Transaction(acc2, None, 1000, "withdraw")
+        txn2.execute()
+    except Exception as e:
+        print("Transaction Error:", e)
+
+    try:
+        txn3 = Transaction(acc1, acc2, 3000, "transfer")
+        txn3.execute()
+    except Exception as e:
+        print("Transaction Error:", e)
+
+    try:
+        txn4 = Transaction(acc3, None, 5000, "withdraw")  
+        txn4.execute()
+    except Exception as e:
+        print("Transaction Error:", e)
+
+    """Display Balances"""
+    print(f"Balance of {acc1.account_number} (Savings): ₹{acc1.get_balance():.2f}")
+    print(f"Balance of {acc2.account_number} (Current): ₹{acc2.get_balance():.2f}")
+    print(f"Balance of {acc3.account_number} (Fixed Deposit): ₹{acc3.get_balance():.2f}")
+
+    """Calculate Interest"""
+    print(f"Interest on Savings Account: ₹{acc1.calculate_interest():.2f}")
+    print(f"Interest on Fixed Deposit Account: ₹{acc3.calculate_interest():.2f}")
+
+if __name__ == "__main__":
+    main()   
