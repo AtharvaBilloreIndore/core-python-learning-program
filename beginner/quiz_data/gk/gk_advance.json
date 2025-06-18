@@ -1,0 +1,62 @@
+{
+  "title": "gk advance",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which is the smallest planet in our solar system?",
+      "options": {
+        "A": "Mercury",
+        "B": "Mars",
+        "C": "Venus",
+        "D": "Pluto"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question_text": "What language is primarily spoken in Brazil?",
+      "options": {
+        "A": "Spanish",
+        "B": "Portuguese",
+        "C": "French",
+        "D": "English"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "In computing, what does 'CPU' stand for?",
+      "options": {
+        "A": "Central Process Unit",
+        "B": "Central Processing Unit",
+        "C": "Computer Primary Unit",
+        "D": "Control Processing Unit"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "Which desert is the largest hot desert?",
+      "options": {
+        "A": "Gobi",
+        "B": "Sahara",
+        "C": "Kalahari",
+        "D": "Thar"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "Which organ filters blood in the human body?",
+      "options": {
+        "A": "Heart",
+        "B": "Lungs",
+        "C": "Kidneys",
+        "D": "Liver"
+      },
+      "correct_option": "C"
+    }
+  ]
+}
+
+    

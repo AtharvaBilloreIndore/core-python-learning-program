@@ -1,0 +1,60 @@
+{
+  "title": "Quant easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "If 6 men can complete a job in 12 days, how many men are needed to finish it in 3 days?",
+      "options": {
+        "A": "12",
+        "B": "18",
+        "C": "24",
+        "D": "30"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "A can do a job in 6 days and B in 12 days. How many days together?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "3"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "A person crosses a 600 m street in 5 min. His speed (km/h)?",
+      "options": {
+        "A": "3.6",
+        "B": "7.2",
+        "C": "8.4",
+        "D": "10"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "A faster train (60 km/h) overtakes a slower one (40 km/h) and a man on it in 54 seconds. What is the length of the faster train?",
+      "options": {
+        "A": "150 m",
+        "B": "200 m",
+        "C": "300 m",
+        "D": "250 m"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 5,
+      "question_text": "A car goes 60 km/h one way and 75 km/h back. Find average speed.",
+      "options": {
+        "A": "65 km/h",
+        "B": "67.5 km/h",
+        "C": "70 km/h",
+        "D": "72.5 km/h"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "AI ML advance",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is Q Learning's main purpose?",
+      "options": {
+        "A": "Hyperparameter tuning",
+        "B": "Neural network weight update",
+        "C": "Learning policy to maximize expected reward",
+        "D": "Dimensionality reduction"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 2,
+      "question_text": "Which model outputs target variable?",
+      "options": {
+        "A": "Descriptive model",
+        "B": "Predictive model",
+        "C": "Reinforcement learning",
+        "D": "All of the above"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 3,
+      "question_text": "What is ensemble learning?",
+      "options": {
+        "A": "Single model for different tasks",
+        "B": "Combining multiple models predictions",
+        "C": "Single algorithm on large data",
+        "D": "Different algorithm per dataset part"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 4,
+      "question_text": "Which is NOT a core ML technique?",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Rule-based inference",
+        "C": "Semi-supervised learning",
+        "D": "Unsupervised learning"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "What is a support vector machine?",
+      "options": {
+        "A": "Unsupervised method",
+        "B": "Neural network",
+        "C": "Supervised classifier",
+        "D": "Clustering algorithm"
+      },
+      "correct_option": "C"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "programming adv",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which is not OOP principle?",
+      "options": {
+        "A": "Encapsulation",
+        "B": "Polymorphism",
+        "C": "Abstraction",
+        "D": "Compilation"
+      },
+      "correct_option": "D"
+    },
+    {
+      "id": 2,
+      "question_text": "In Python, what keyword defines a function?",
+      "options": {
+        "A": "func",
+        "B": "def",
+        "C": "function",
+        "D": "define"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "What symbol begins a comment in SQL?",
+      "options": {
+        "A": "//",
+        "B": "#",
+        "C": "--",
+        "D": "/*"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 4,
+      "question_text": "Which HTML tag is for a hyperlink?",
+      "options": {
+        "A": "<a>",
+        "B": "<link>",
+        "C": "<href>",
+        "D": "<ul>"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question_text": "Which language is primarily used for Android app development?",
+      "options": {
+        "A": "Swift",
+        "B": "Kotlin",
+        "C": "Ruby",
+        "D": "PHP"
+      },
+      "correct_option": "B"
+    }
+  ]
+}
