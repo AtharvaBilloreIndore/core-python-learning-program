@@ -1,0 +1,10 @@
+[
+    {
+        "question": "What is DSA stand for?",
+        "answer": "DSA stand for Data Structures and Algorithms."
+    },
+    {
+        "question": "What are data types?",
+        "answer": "Data types are classifications that define the kind of values a variable can hold."
+    }
+]
