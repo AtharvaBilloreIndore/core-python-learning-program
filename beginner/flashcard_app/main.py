@@ -72,8 +72,8 @@ class Admin:
             print(f"{idx + 1}. Q: {card['question']}")
         try:
             choice = int(input("Select flashcard number to update: ")) - 1
-            if 1 <= choice < len(self.data):
-                card = self.data[choice - 1]
+            if 0 <= choice < len(self.data):
+                card = self.data[choice]
                 while True:
                     new_question = input("Enter new question: ").strip()
                     if not new_question:

@@ -5,7 +5,6 @@ from main import Load, Admin, User, select_subject, main
 
 class TestFlashcardApp(unittest.TestCase):
     """Unit test suite for Flashcard App components."""
-
     def test_get_subject_path(self):
         """Test if the correct file path is returned for a given subject name."""
         path = Load.get_subject_path("python")
