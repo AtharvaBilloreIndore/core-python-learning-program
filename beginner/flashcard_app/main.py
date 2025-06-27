@@ -77,17 +77,15 @@ class Admin:
                 while True:
                     new_question = input("Enter new question: ").strip()
                     if not new_question:
-                        print("❗ Question cannot be empty.")
+                        print("Question cannot be empty.")
                     elif new_question.isdigit():
-                        print("❗ Question cannot be only numbers.")
-                    elif "?" not in new_question:
-                        print("❗ Question must include a question mark.")
+                        print("Question cannot be only numbers.")
                     else:
                         break
                 while True:
                     new_answer = input("Enter new answer: ").strip()
                     if not new_answer:
-                        print("❗ Answer cannot be empty.")
+                        print("Answer cannot be empty.")
                     else:
                         break 
                 card["question"] = new_question
