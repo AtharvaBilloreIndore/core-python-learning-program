@@ -1,0 +1,60 @@
+{
+  "title": "gk easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the capital of Australia?",
+      "options": {
+        "A": "Sydney",
+        "B": "Canberra",
+        "C": "Melbourne",
+        "D": "Brisbane"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "Which planet is known as the Red Planet?",
+      "options": {
+        "A": "Earth",
+        "B": "Mars",
+        "C": "Jupiter",
+        "D": "Venus"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "Who wrote 'Hamlet'?",
+      "options": {
+        "A": "Charles Dickens",
+        "B": "William Shakespeare",
+        "C": "Leo Tolstoy",
+        "D": "Mark Twain"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "Which is the largest ocean on Earth?",
+      "options": {
+        "A": "Atlantic",
+        "B": "Indian",
+        "C": "Arctic",
+        "D": "Pacific"
+      },
+      "correct_option": "D"
+    },
+    {
+      "id": 5,
+      "question_text": "Who is known as the father of computers?",
+      "options": {
+        "A": "Alan Turing",
+        "B": "Charles Babbage",
+        "C": "Bill Gates",
+        "D": "Steve Jobs"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

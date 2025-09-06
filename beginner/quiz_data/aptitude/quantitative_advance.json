@@ -1,0 +1,60 @@
+{
+  "title": "Quant Advance",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "How many 4-digit numbers divisible by 5, no repeated digits?",
+      "options": {
+        "A": "1,512",
+        "B": "1,728",
+        "C": "2,016",
+        "D": "2,268"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "A train (bridge = 3 km; train is half-long of bridge) clears in 4 min. Speed?",
+      "options": {
+        "A": "50 km/h",
+        "B": "62.5 km/h",
+        "C": "67.5 km/h",
+        "D": "48 km/h"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "Simple interest on 36,000 @6% for 4 years?",
+      "options": {
+        "A": "12,560",
+        "B": "12,960",
+        "C": "13,500",
+        "D": "14,500"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "Two trains (50 km/h & 32 km/h). One passes other in 18 s. Faster train length?",
+      "options": {
+        "A": "90 m",
+        "B": "100 m",
+        "C": "110 m",
+        "D": "120 m"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question_text": "Man reaches office 20 mins late at 3 km/h, 30 mins early at 4 km/h. Distance covered?",
+      "options": {
+        "A": "20 km",
+        "B": "16 km",
+        "C": "14 km",
+        "D": "10 km"
+      },
+      "correct_option": "D"
+    }
+  ]
+}

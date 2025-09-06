@@ -1,0 +1,60 @@
+{
+  "title": "AI ML medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is feature scaling?",
+      "options": {
+        "A": "Feature selection",
+        "B": "Scale transformation",
+        "C": "Reducing number of features",
+        "D": "Visualizing importance"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "What is the purpose of a loss function?",
+      "options": {
+        "A": "Store data",
+        "B": "Measure model error",
+        "C": "Visualize data",
+        "D": "Reduce data size"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "What is PCA used for?",
+      "options": {
+        "A": "Classification",
+        "B": "Dimensionality reduction",
+        "C": "Clustering",
+        "D": "Forecasting"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "What does bias–variance tradeoff refer to?",
+      "options": {
+        "A": "Accuracy vs complexity",
+        "B": "Training vs testing error",
+        "C": "Bias vs variance in errors",
+        "D": "Cost vs accuracy"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 5,
+      "question_text": "What is reinforcement learning?",
+      "options": {
+        "A": "Memorizing data",
+        "B": "A form of unsupervised learning",
+        "C": "Learning via trial-and-error rewards",
+        "D": "Following explicit instructions"
+      },
+      "correct_option": "C"
+    }
+  ]
+}

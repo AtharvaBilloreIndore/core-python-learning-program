@@ -1,0 +1,60 @@
+{
+  "title": "programming easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "In Python, what does 'len(list)' return?",
+      "options": {
+        "A": "Last element",
+        "B": "Number of elements",
+        "C": "Memory address",
+        "D": "Type of list"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "What does HTML stand for?",
+      "options": {
+        "A": "HyperText Markup Language",
+        "B": "HighText Machine Language",
+        "C": "Hyperloop Machine Language",
+        "D": "HyperText Markdown Language"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question_text": "In Java, which keyword is used to define a subclass?",
+      "options": {
+        "A": "import",
+        "B": "extends",
+        "C": "implements",
+        "D": "subclass"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "Which SQL keyword is used to remove duplicate records?",
+      "options": {
+        "A": "UNIQUE",
+        "B": "DISTINCT",
+        "C": "REMOVE",
+        "D": "FILTER"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "In C, which symbol is used for logical AND?",
+      "options": {
+        "A": "&",
+        "B": "&&",
+        "C": "!",
+        "D": "|"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

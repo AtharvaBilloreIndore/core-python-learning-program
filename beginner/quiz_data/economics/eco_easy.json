@@ -1,0 +1,60 @@
+{
+  "title": "Eco easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the opportunity cost of producing more of good A?",
+      "options": {
+        "A": "Extra resources used",
+        "B": "Revenue lost from good B",
+        "C": "Production cost for A",
+        "D": "Price of good A"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "GDP at constant prices is also called:",
+      "options": {
+        "A": "Nominal GDP",
+        "B": "Real GDP",
+        "C": "Potential GDP",
+        "D": "Per capita GDP"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 3,
+      "question_text": "What does the Laffer Curve illustrate?",
+      "options": {
+        "A": "Inflation vs unemployment",
+        "B": "Tax rate vs tax revenue",
+        "C": "Money supply vs interest rate",
+        "D": "Trade balance vs exchange rate"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "Monetary policy in most countries is controlled by:",
+      "options": {
+        "A": "Ministry of Finance",
+        "B": "Central Bank",
+        "C": "Trade Union",
+        "D": "Treasury"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "What is fiscal deficit?",
+      "options": {
+        "A": "Expenditure < Revenue",
+        "B": "Interest payments only",
+        "C": "Expenditure > Revenue",
+        "D": "Savings > Investment"
+      },
+      "correct_option": "C"
+    }
+  ]
+}

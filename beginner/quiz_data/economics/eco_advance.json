@@ -1,0 +1,60 @@
+{
+  "title": "Eco Advance",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is human capital?",
+      "options": {
+        "A": "Machinery used in production",
+        "B": "Skills and education",
+        "C": "Financial assets",
+        "D": "Raw materials"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 2,
+      "question_text": "Which is a public good?",
+      "options": {
+        "A": "Pizza",
+        "B": "Street lighting",
+        "C": "Private tutoring",
+        "D": "Car"
+      },
+      "correct_option": "B"
+    },
+    { 
+      "id": 3,
+      "question_text": "Inflation targeting focuses on:",
+      "options": {
+        "A": "Boosting GDP only",
+        "B": "Price stability",
+        "C": "Max employment always",
+        "D": "Reducing trade deficit"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "What is a sunk cost?",
+      "options": {
+        "A": "Avoidable future cost",
+        "B": "Cost already incurred",
+        "C": "Cost per unit output",
+        "D": "Tax paid upfront"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "Which is a liquidity measure of a bank?",
+      "options": {
+        "A": "Capital adequacy ratio",
+        "B": "Loan-to-Deposit ratio",
+        "C": "Return on assets",
+        "D": "Non-performing assets"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

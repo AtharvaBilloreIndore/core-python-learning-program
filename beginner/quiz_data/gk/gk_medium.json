@@ -1,0 +1,60 @@
+{
+  "title": "gk easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the chemical symbol for water?",
+      "options": {
+        "A": "H2O",
+        "B": "O2",
+        "C": "CO2",
+        "D": "NaCl"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question_text": "Mount Everest is located in which mountain range?",
+      "options": {
+        "A": "Andes",
+        "B": "Rockies",
+        "C": "Alps",
+        "D": "Himalayas"
+      },
+      "correct_option": "D"
+    },
+    {
+      "id": 3,
+      "question_text": "Which element has atomic number 6?",
+      "options": {
+        "A": "Nitrogen",
+        "B": "Oxygen",
+        "C": "Carbon",
+        "D": "Helium"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 4,
+      "question_text": "Which country gifted the Statue of Liberty to the USA?",
+      "options": {
+        "A": "England",
+        "B": "Germany",
+        "C": "France",
+        "D": "Spain"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 5,
+      "question_text": "Who painted the Mona Lisa?",
+      "options": {
+        "A": "Vincent van Gogh",
+        "B": "Leonardo da Vinci",
+        "C": "Pablo Picasso",
+        "D": "Michelangelo"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

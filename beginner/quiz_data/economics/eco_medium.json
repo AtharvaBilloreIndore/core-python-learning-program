@@ -1,0 +1,60 @@
+{
+  "title": "Eco medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which curve shows inflation vs unemployment?",
+      "options": {
+        "A": "Phillips Curve",
+        "B": "Laffer Curve",
+        "C": "Kuznets Curve",
+        "D": "IS Curve"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question_text": "What is barter trade?",
+      "options": {
+        "A": "Cashless exchange of goods",
+        "B": "Using credit cards",
+        "C": "Digital payments",
+        "D": "Using money"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question_text": "Demand increases when:",
+      "options": {
+        "A": "Prices rise",
+        "B": "Income rises (normal good)",
+        "C": "Prices of complements rise",
+        "D": "Taxes reduce"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "What does CPI measure?",
+      "options": {
+        "A": "Economic growth",
+        "B": "Price level of consumer basket",
+        "C": "Budget deficit",
+        "D": "Unemployment rate"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "Trade protection often uses:",
+      "options": {
+        "A": "Subsidies",
+        "B": "Tariffs",
+        "C": "Price floors",
+        "D": "Price ceilings"
+      },
+      "correct_option": "B"
+    }
+  ]
+}

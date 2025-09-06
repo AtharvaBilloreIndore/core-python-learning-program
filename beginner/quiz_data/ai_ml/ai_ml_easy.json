@@ -1,0 +1,60 @@
+{
+  "title": "AI ML easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is machine learning?",
+      "options": {
+        "A": "A branch of AI focused on building systems that learn from data",
+        "B": "A method for data storage",
+        "C": "Programming robots",
+        "D": "Creating 3D animations"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question_text": "What type of learning is regression?",
+      "options": {
+        "A": "Clustering",
+        "B": "Dimensionality reduction",
+        "C": "Regression",
+        "D": "Association rules"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 3,
+      "question_text": "What does overfitting mean?",
+      "options": {
+        "A": "Model handles unseen data perfectly",
+        "B": "Fits training data too well but generalizes poorly",
+        "C": "Model is too simple",
+        "D": "Slow training"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "What is a neural network?",
+      "options": {
+        "A": "Database",
+        "B": "Decision tree",
+        "C": "Brain-inspired ML model",
+        "D": "Visualization tool"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 5,
+      "question_text": "Which is commonly used for classification?",
+      "options": {
+        "A": "Linear Regression",
+        "B": "K Means Clustering",
+        "C": "Random Forest",
+        "D": "PCA"
+      },
+      "correct_option": "C"
+    }
+  ]
+}

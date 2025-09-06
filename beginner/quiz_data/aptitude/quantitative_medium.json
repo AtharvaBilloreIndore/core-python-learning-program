@@ -1,0 +1,60 @@
+{
+  "title": "Quant medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Without stops, speed is 50 km/h; including, it's 40 km/h for the same trip. How many minutes per hour does it stop?",
+      "options": {
+        "A": "15 min",
+        "B": "18 min",
+        "C": "20 min",
+        "D": "24 min"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 2,
+      "question_text": "A number is increased by 20% and then decreased by 20%. What is the net change in the number?",
+      "options": {
+        "A": "No change",
+        "B": "Increase of 4%",
+        "C": "Decrease of 4%",
+        "D": "Increase of 0.4%"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 3,
+      "question_text": "A pole is crossed by a train moving at 80 km/h in 7 seconds. What is its length?",
+      "options": {
+        "A": "150 m",
+        "B": "165 m",
+        "C": "175 m",
+        "D": "170 m"
+      },
+      "correct_option": "C"
+    },
+    {
+      "id": 4,
+      "question_text": "A man walks 10 km at 10 km/h, resting 4 min after every km. Total time?",
+      "options": {
+        "A": "90 min",
+        "B": "96 min",
+        "C": "100 min",
+        "D": "110 min"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 5,
+      "question_text": "A man walks at 5 km/h and crosses a bridge in 15 minutes. How long is the bridge?",
+      "options": {
+        "A": "1250 m",
+        "B": "1280 m",
+        "C": "1320 m",
+        "D": "1340 m"
+      },
+      "correct_option": "C"
+  }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "programming med",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is recursion?",
+      "options": {
+        "A": "Function calls itself",
+        "B": "Loop with condition",
+        "C": "Compiling code",
+        "D": "Multi-threading"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question_text": "In JavaScript, which is falsy?",
+      "options": {
+        "A": "0",
+        "B": "\"0\"",
+        "C": "[]",
+        "D": "{}"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question_text": "What data structure uses FIFO order?",
+      "options": {
+        "A": "Stack",
+        "B": "Queue",
+        "C": "Tree",
+        "D": "Graph"
+      },
+      "correct_option": "B"
+    },
+    {
+      "id": 4,
+      "question_text": "What is a pointer in C?",
+      "options": {
+        "A": "Variable storing address",
+        "B": "Function parameter",
+        "C": "Memory block",
+        "D": "Boolean flag"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question_text": "Which loop guarantees at least one execution?",
+      "options": {
+        "A": "for",
+        "B": "while",
+        "C": "do…while",
+        "D": "foreach"
+      },
+      "correct_option": "C"
+    }
+  ]
+}
